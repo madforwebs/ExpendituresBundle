@@ -1,0 +1,7 @@
+parameters:
+  expenditure.handler.class: MadForWebs\ExpendituresBundle\Service\ExpenditureHandler
+
+services:
+  expenditure.handler:
+    class: %expenditure.handler.class%
+    arguments: ["@doctrine.orm.entity_manager", "@router" , "@translator"]
