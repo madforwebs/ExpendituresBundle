@@ -9,7 +9,7 @@
   },
   "require": {
     "symfony/framework-bundle": "~2.3|~3.2",
-    "madforwebs/expenditures-bundle": "dev-master"
+    "madforwebs/account-bundle": "dev-master"
   },
   "license": "MIT",
   "authors": [
