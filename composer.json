@@ -4,12 +4,12 @@
   "type": "symfony-bundle",
   "autoload": {
     "psr-4": {
-      "MadForWebs\\TaskBundle\\": ""
+      "MadForWebs\\ExpendituresBundle\\": ""
     }
   },
   "require": {
     "symfony/framework-bundle": "~2.3|~3.2",
-    "madforwebs/account-bundle": "dev-master"
+    "madforwebs/account-bundle": "*"
   },
   "license": "MIT",
   "authors": [
