@@ -9,7 +9,7 @@
   },
   "require": {
     "symfony/framework-bundle": "~2.3|~3.2",
-    "madforwebs/account-bundle": "master"
+    "madforwebs/account-bundle":"*"
   },
   "license": "MIT",
   "authors": [
@@ -17,6 +17,5 @@
       "name": "Fernando Sánchez Martínez",
       "email": "fer@madforwebs.com"
     }
-  ],
-  "minimum-stability": "stable"
+  ]
 }
