@@ -7,10 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- * Expenditure
- *
- * @ORM\Table(name="expenditure")
- * @ORM\Entity(repositoryClass="MadForWebs\ExpenditureBundle\Repository\ExpenditureRepository")
+ * @ORM\MappedSuperclass
  */
 class Expenditure
 {
