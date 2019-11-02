@@ -16,19 +16,19 @@ class Provider
      * @var string
      * @ORM\Column(name="name", type="string", nullable=true)
      */
-    private $name;
+    protected $name;
 
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
      */
-    private $createdAt;
+    protected $createdAt;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
      */
-    private $updatedAt;
+    protected $updatedAt;
 
 
 

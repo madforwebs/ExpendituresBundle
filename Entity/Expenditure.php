@@ -21,31 +21,25 @@ class Expenditure
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="CoreBundle\Entity\Year", inversedBy="expenditures", cascade={"persist"})
-     * @ORM\JoinColumn(name="year", referencedColumnName="id", nullable=true)
-     */
-    private $year;
-
-    /**
      * @var float
      *
      * @ORM\Column(name="quantity", type="float")
      */
-    private $quantity;
+    protected $quantity;
 
     /**
      * @var float
      *
      * @ORM\Column(name="vat", type="float", nullable=true))
      */
-    private $vat;
+    protected $vat;
 
     /**
      * @var float
      *
      * @ORM\Column(name="irpf", type="float", nullable=true))
      */
-    private $irpf;
+    protected $irpf;
 
 
     /**
@@ -53,67 +47,61 @@ class Expenditure
      *
      * @ORM\Column(name="total", type="float", nullable=true))
      */
-    private $total;
+    protected $total;
 
     /**
      * @var string
      *
      * @ORM\Column(name="status", type="string", columnDefinition="enum('pending','paid')")
      */
-    private $status;
+    protected $status;
 
     /**
      * @ORM\ManyToOne(targetEntity="Provider", inversedBy="expenditures")
      * @ORM\JoinColumn(name="provider", referencedColumnName="id", nullable=true)
      */
-    private $provider;
+    protected $provider;
 
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Account", inversedBy="expenditures")
-     * @ORM\JoinColumn(name="account", referencedColumnName="id", nullable=true)
-     */
-    private $account;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_buy", type="datetime", nullable=true)
      */
-    private $dateBuy;
+    protected $dateBuy;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_paid", type="datetime", nullable=true)
      */
-    private $datePaid;
+    protected $datePaid;
 
 
     /**
      * @var string
      * @ORM\Column(name="way_to_pay", type="string", columnDefinition="enum('card','bank','transfer','cash','paydesk', 'gratification')" , nullable=false)
      */
-    private $wayToPay;
+    protected $wayToPay;
 
 
     /**
      * @var string
      * @ORM\Column(name="concept", type="string", nullable=true)
      */
-    private $concept;
+    protected $concept;
 
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
      */
-    private $createdAt;
+    protected $createdAt;
 
     /**
      * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime")
      */
-    private $updatedAt;
+    protected $updatedAt;
 
 
 
