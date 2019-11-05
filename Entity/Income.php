@@ -33,9 +33,6 @@ class Income
      */
     protected $dateIncome;
 
-
-
-
     /**
      * @var string
      * @ORM\Column(name="method", type="string", columnDefinition="enum('income','expenditure')" , nullable=false)
@@ -53,6 +50,8 @@ class Income
      * @ORM\Column(type="datetime")
      */
     protected $updatedAt;
+
+
 
 
     /**

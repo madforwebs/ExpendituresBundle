@@ -105,6 +105,7 @@ class Expenditure
     protected $updatedAt;
 
 
+    
 
 
     /**
