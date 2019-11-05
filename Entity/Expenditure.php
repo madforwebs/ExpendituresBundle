@@ -12,14 +12,6 @@ use Gedmo\Mapping\Annotation as Gedmo;
  */
 class Expenditure
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
 
     /**
      * @var float
@@ -105,7 +97,7 @@ class Expenditure
     protected $updatedAt;
 
 
-    
+
 
 
     /**
